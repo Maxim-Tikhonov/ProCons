@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+  dslVersion="1.0.0.0"
+  Id="8fab961c-6c10-489a-a792-853ff1e6e416"
+  name="Scenarios" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="089767e7-00de-4450-a44e-acf8a53e7a3a"
+        LastKnownName="Actor Catalouge"
+        LastKnownLocation="Package1_2213.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="72c66bfc-5e97-4e01-b3e2-dee44b9fea7e"
+        LastKnownName="Architecture Significant Use Case"
+        LastKnownLocation="Package2_2213.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

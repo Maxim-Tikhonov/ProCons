@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7e534719-c011-484e-ba3d-65847b2d15f2" name="Components" linkedPackageId="d249f94d-0ee0-460f-ac63-ae0d0841e266" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="535fd098-6170-4e45-ae39-6357edd14436">
+      <profileInstance Id="3ac10b9e-d0d9-4bd4-b14c-a97cfa538ed6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="38e18480-1d31-4fc2-801c-044074e21632">
+      <profileInstance Id="599e32e3-d215-4054-be59-30c1d373419f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="f24da32e-3122-4f81-9888-76855b2c0223" name="Web-интерфейс" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99501f2a-5c5e-4944-a69f-18b59c951c50" />
+        <ownedAttributesInternal>
+          <part Id="87db2b4e-e83b-4720-998b-f3b5019d0d5c" name="Учет операций" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="34afe18d-0151-4749-b718-97b6f0ee1d87" />
+            <type_NamedElement>
+              <componentMoniker Id="68e3f1fc-581a-4e26-96ee-09e90574361e" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7b0ca513-5559-4f12-b291-49e37c8ebc26" name="Web-сервисы" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6d6f2bbc-05a5-4567-8ab9-9c51c6c5883a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="68e3f1fc-581a-4e26-96ee-09e90574361e" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42dd1f7c-4495-4058-8afa-3d03b91903d8" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="d249f94d-0ee0-460f-ac63-ae0d0841e266" name="ModelingProject1">
+    <elementDefinition Id="8010e4f4-d74d-416e-86a3-d2ea8e8673d3" />
+  </package>
+</componentModel>

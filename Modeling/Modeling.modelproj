@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0460c053-4422-4b6d-a376-663d8723efbc}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject1</Name>
+    <RootNamespace>ModelingProject1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="ClassDiagramm.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagramm.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagramm.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Components.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Components.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Components.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0100.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0102.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0100.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0059.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0100.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0101.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0102.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2211.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2212.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Registering.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Registering.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Registering.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject1.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

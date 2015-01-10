@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="91cfbccc-89e6-46fa-bf97-432a436f0759" name="Registering" linkedPackageId="8128b028-a48d-424e-926e-b255ca05007d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e30a9fef-5062-4542-84be-0c15cfabafda">
+      <profileInstance Id="023d753f-e6a8-435d-b1c1-a0f9845e1a2c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ea7fb520-8bc7-420b-84b5-5ad5295904b1">
+      <profileInstance Id="81a1f8b7-4617-4e65-9c43-b0fc42a4cc1c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8d06e18d-54a8-4787-abef-dca37ad98092" name="Регистратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01f34488-bf5d-4a02-a132-083d2449fe63" />
+        <targetEnds>
+          <association Id="f2737e44-8882-4367-b0c6-ad7c92c47ae2" isDerived="false" sourceEndRoleName="Регистратор расходов" targetEndRoleName="Учет" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" LastKnownName="Учет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c85bdbec-71c8-4603-8b77-0af3fb80c6cc" name="Регистратор расходов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6a3b1c89-2520-48a1-88a3-d9c6dbb8e87d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06fc4311-5966-4983-91b0-7d0766c8576b" name="Учет" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9b2977c-e23d-4e87-9078-d3198057f247" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b70cc1d-03e5-4036-af58-cf8f6e204161" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa5bd9f6-5b16-4717-9f9f-18f3204d17aa" name="Ввести доход" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2fd8b759-fe6f-4a96-9aa5-01d47cafe58a" />
+        <subjects>
+          <subsystemMoniker Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" LastKnownName="Учет" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89cb8104-0e03-4fc1-837e-8434957a2933" name="Ввести расход" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a8d9dd0-c6d0-4585-a611-adaf1a4eca6d" />
+        <subjects>
+          <subsystemMoniker Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" LastKnownName="Учет" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" name="Учет" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="bdce008d-8a82-40e3-920a-f2315be6eb23" name="Импорт записей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a61737e-da20-4dbe-b2e0-fe35088feb06" />
+        <subjects>
+          <subsystemMoniker Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" LastKnownName="Учет" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a80a4b4f-baee-41b3-b41a-f617a072ab67" name="Экспорт записей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8a973d8-4516-4335-855c-59b374ec5d6b" />
+        <subjects>
+          <subsystemMoniker Id="0f59a7b7-36d2-46f8-931e-4dd700a9c60a" LastKnownName="Учет" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8128b028-a48d-424e-926e-b255ca05007d" name="ModelingProject1">
+    <elementDefinition Id="8010e4f4-d74d-416e-86a3-d2ea8e8673d3" />
+  </package>
+</useCaseModelRoot>

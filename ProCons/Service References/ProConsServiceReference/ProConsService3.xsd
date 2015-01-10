@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ProConsService.Service_Objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ProConsService.Service_Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1069/ProConsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="RetrieveMultipleRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Criteria" nillable="true" type="tns:ArrayOfFilterCondition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetrieveMultipleRequest" nillable="true" type="tns:RetrieveMultipleRequest" />
+  <xs:complexType name="ArrayOfFilterCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FilterCondition" nillable="true" type="tns:FilterCondition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilterCondition" nillable="true" type="tns:ArrayOfFilterCondition" />
+  <xs:complexType name="FilterCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FieldName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FilterOperator" type="tns:FilterOperators" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterCondition" nillable="true" type="tns:FilterCondition" />
+  <xs:simpleType name="FilterOperators">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Equal">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FilterOperators" nillable="true" type="tns:FilterOperators" />
+</xs:schema>

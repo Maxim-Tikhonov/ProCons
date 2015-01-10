@@ -1,0 +1,14 @@
+﻿@model System.Collections.Generic.List<ProCons.Models.Account>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Счета</h2>
+@foreach (var iAccount in Model)
+{
+    <section>
+        @Html.ActionLink(iAccount.Name,"Records",new {accountId=iAccount.Id})
+    </section>
+}

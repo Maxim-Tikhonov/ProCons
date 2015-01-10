@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1069/ProConsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AccountWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountWS" nillable="true" type="tns:AccountWS" />
+  <xs:complexType name="ArrayOfAccountWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountWS" nillable="true" type="tns:AccountWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAccountWS" nillable="true" type="tns:ArrayOfAccountWS" />
+  <xs:complexType name="ArrayOfRecordWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecordWs" nillable="true" type="tns:RecordWs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecordWs" nillable="true" type="tns:ArrayOfRecordWs" />
+  <xs:complexType name="RecordWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Account" nillable="true" type="tns:AccountWS" />
+      <xs:element minOccurs="0" name="AccountId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Category" nillable="true" type="tns:CategoryWS" />
+      <xs:element minOccurs="0" name="CategoryId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecordWs" nillable="true" type="tns:RecordWs" />
+  <xs:complexType name="CategoryWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoryWS" nillable="true" type="tns:CategoryWS" />
+</xs:schema>

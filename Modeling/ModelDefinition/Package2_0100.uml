@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+  dslVersion="1.0.0.0"
+  Id="fe4b29ea-3437-473c-8206-073a1a1402f4"
+  name="Analysis Elements" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="29461723-5701-48db-a561-c4eaec8f4a46"
+        LastKnownName="Use Case Realizations"
+        LastKnownLocation="Package_0101.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

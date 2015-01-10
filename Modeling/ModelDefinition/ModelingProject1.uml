@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8010e4f4-d74d-416e-86a3-d2ea8e8673d3"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e2613a29-86fe-4bd3-a8d0-3aa2fd2200d1"
+        LastKnownName="Development View"
+        LastKnownLocation="Package_0059.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e20c1ff4-e829-4b29-884b-d3418c541dc6"
+        LastKnownName="Logical View"
+        LastKnownLocation="Package1_0100.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e8bcb1f2-6c3c-41f9-8c4c-ca752d979ffe"
+        LastKnownName="Physical View"
+        LastKnownLocation="Package_0102.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ecfca5ec-1778-4ba2-bf21-9ba52728dc74"
+        LastKnownName="Process View"
+        LastKnownLocation="Package_2211.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8fab961c-6c10-489a-a792-853ff1e6e416"
+        LastKnownName="Scenarios"
+        LastKnownLocation="Package_2213.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="01f34488-bf5d-4a02-a132-083d2449fe63"
+        name="Регистратор"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5b70cc1d-03e5-4036-af58-cf8f6e204161"
+            isDerived="false"
+            sourceEndRoleName="Регистратор расходов"
+            targetEndRoleName="Учет"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+              LastKnownName="Учет"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a3b1c89-2520-48a1-88a3-d9c6dbb8e87d"
+                  name="Регистратор расходов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c9b2977c-e23d-4e87-9078-d3198057f247"
+                  name="Учет"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2fd8b759-fe6f-4a96-9aa5-01d47cafe58a"
+        name="Ввести доход"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+            LastKnownName="Учет"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a8d9dd0-c6d0-4585-a611-adaf1a4eca6d"
+        name="Ввести расход"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+            LastKnownName="Учет"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+        name="Учет"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a61737e-da20-4dbe-b2e0-fe35088feb06"
+        name="Импорт записей"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+            LastKnownName="Учет"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8a973d8-4516-4335-855c-59b374ec5d6b"
+        name="Экспорт записей"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="2e3ee1ce-5014-4195-9ee2-98f42bb86b59"
+            LastKnownName="Учет"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="99501f2a-5c5e-4944-a69f-18b59c951c50"
+        name="Web-интерфейс"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="34afe18d-0151-4749-b718-97b6f0ee1d87"
+            name="Учет операций"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="42dd1f7c-4495-4058-8afa-3d03b91903d8"
+                LastKnownName="Component1"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6c9b5e57-9f74-4842-a12f-5ff759b412ac"
+        name="Отчеты"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6d6f2bbc-05a5-4567-8ab9-9c51c6c5883a"
+        name="Web-сервисы"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="42dd1f7c-4495-4058-8afa-3d03b91903d8"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="41a85a01-f6a1-46d9-b90c-2585765d45a8"
+        name="Account"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d842831f-f973-47b4-84ca-72483bb11fd6"
+        name="Операция"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="90325c46-a338-4355-a83e-eb629695b274"
+            name="id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5611ae04-68cc-430d-8963-1437e09f923c"
+        name="Категория"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

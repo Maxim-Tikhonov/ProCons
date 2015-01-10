@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="36e69475-9a17-40bd-81df-7dcc3ea72e72" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1069/ProConsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProConsService.wsdl" MetadataType="Wsdl" ID="878eb3ba-4b15-4c02-b6dd-ede739a3bb47" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?wsdl" />
+    <MetadataFile FileName="ProConsService3.xsd" MetadataType="Schema" ID="c1720b4d-4753-4349-9486-f502ca9c7dab" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProConsService1.xsd" MetadataType="Schema" ID="31e5807d-a44e-4413-a94a-4d3522f8a111" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProConsService2.xsd" MetadataType="Schema" ID="f023e337-8867-4acc-9ada-de74c92b1dfe" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProConsService.xsd" MetadataType="Schema" ID="602f0b09-21ec-4f54-b602-bffccc6001fe" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProConsService.disco" MetadataType="Disco" ID="1c25aee6-35ed-4eaa-a942-7deb69d966ec" SourceId="1" SourceUrl="http://localhost:1069/ProConsService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,26 @@
+﻿@model System.Collections.Generic.List<ProCons.Models.Record>
+
+@{
+    ViewBag.Title = "Записи";
+}
+
+<h2>Записи @ViewBag.AccountName</h2>
+<table>
+    <thead>
+    <tr>
+        <td>Дата</td>
+        <td>Категория</td>
+        <td>Сумма</td>
+        <td>Комментарий</td>
+    </tr>
+    </thead>
+    @foreach (var iRecord in Model)
+    {
+        <tr>
+            <td>@iRecord.Date</td>
+            <td>@iRecord.CategoryName</td>
+            <td>@iRecord.Total</td>
+            <td>@iRecord.Comment</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Components">
+  <componentModelMoniker Id="7e534719-c011-484e-ba3d-65847b2d15f2" />
+  <nestedChildShapes>
+    <componentShape Id="519dfebb-ba32-42cc-9214-da47f3139084" absoluteBounds="0.5, 0.5, 4.110416746139526, 2.8458333333333332" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="f24da32e-3122-4f81-9888-76855b2c0223" LastKnownName="Web-интерфейс" />
+      <nestedChildShapes>
+        <componentUseShape Id="4863b400-1434-488b-8b79-2365b284a483" absoluteBounds="0.60000000000000009, 1.25, 3.0416666666666665, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="3.0416666666666665" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="3.0416666666666665" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+          <partMoniker Id="87db2b4e-e83b-4720-998b-f3b5019d0d5c" LastKnownName="Учет операций" />
+        </componentUseShape>
+      </nestedChildShapes>
+    </componentShape>
+    <componentShape Id="c28b662c-f76d-4b7a-918c-8530a7338c17" absoluteBounds="5, 0.625, 2.34375, 1.5125000000000002" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="7b0ca513-5559-4f12-b291-49e37c8ebc26" LastKnownName="Web-сервисы" />
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

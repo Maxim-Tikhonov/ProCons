@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1069/ProConsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:1069/ProConsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" />
+  <xs:import schemaLocation="http://localhost:1069/ProConsService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ProConsService.Service_Objects" />
+  <xs:element name="RetrieveAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="accountId" type="q1:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" minOccurs="0" name="RetrieveAccountResult" nillable="true" type="q2:AccountWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveAccounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ProConsService.Service_Objects" minOccurs="0" name="request" nillable="true" type="q3:RetrieveMultipleRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveAccountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" minOccurs="0" name="RetrieveAccountsResult" nillable="true" type="q4:ArrayOfAccountWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" minOccurs="0" name="account" nillable="true" type="q5:AccountWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateAccountResult" type="q6:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ProConsService.Service_Objects" minOccurs="0" name="request" nillable="true" type="q7:RetrieveMultipleRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ProConsService.Business_Objects" minOccurs="0" name="RetrieveRecordsResult" nillable="true" type="q8:ArrayOfRecordWs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
